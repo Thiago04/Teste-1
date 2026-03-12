@@ -1,3 +1,4 @@
+// Segurança e controle de acesso em JavaScript
 // 1. Validação de senha forte
 function validarSenha(senha) {
   const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
