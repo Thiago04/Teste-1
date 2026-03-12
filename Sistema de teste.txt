@@ -1,0 +1,6 @@
+Sistema de teste
+
+funcionalidades: cadastro de produto, para ter um armazenamento de produto que tenho na empresa que é de uso e consumo.
+objetivo: ter mais controle nos produtos na empresa, para saber se precisa manutenção ou substituição dos mesmos.
+ter histórico de compra, manutenção ou troca.
+Para saber o custo de manutenção e compra e extravio.
