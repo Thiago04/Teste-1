@@ -1,4 +1,7 @@
 // Segurança e controle de acesso em JavaScript
+
+//verificar se vai fazer o pull certo.
+
 // Dependências
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");

@@ -1,0 +1,12 @@
+const nome = "Thiago";
+console.log(nome);
+
+let idade = 32;
+console.log(idade);
+
+let mensagem = "Olá, mundo!";
+console.log(mensagem);
+
+const PI = 3.14;
+PI = 3.20;
+
