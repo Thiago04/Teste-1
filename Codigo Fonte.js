@@ -1,6 +1,10 @@
 // Segurança e controle de acesso em JavaScript
 
+<<<<<<< HEAD
 //verificar se vai fazer o pull certo.
+=======
+//teste para ver o pull
+>>>>>>> df7abfb81959b5aa4d89d6c6707c187799e1a345
 
 // Dependências
 const bcrypt = require("bcrypt");
