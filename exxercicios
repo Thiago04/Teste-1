@@ -1,10 +1,12 @@
-const nome = "Maria";
+const nome = "Thiago";
 console.log(nome);
+
 
 let idade = 25;
 console.log(idade);
 
 let mensagem = "Olá, Pessoal!";
 console.log(mensagem);
+
 
 

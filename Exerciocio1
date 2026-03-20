@@ -1,0 +1,24 @@
+// variável global
+let globalValue = "teste"
+
+// constante
+const CONSTANTE = "valor"
+
+function funcLocal() {
+  // variável local
+  let localValue = "valor"
+  console.log("função local:", localValue)
+}
+
+function funcGlobal() {
+  console.log("função global:", globalValue)
+}
+
+function funcConstante() {
+  console.log("função constante:", CONSTANTE)
+}
+
+// chamar funções
+funcLocal()
+funcGlobal()
+funcConstante()
