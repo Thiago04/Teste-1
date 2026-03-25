@@ -1,0 +1,15 @@
+let altura = 10;
+let largura = 5;
+let area = altura * largura;            
+console.log("A área do retângulo é: " + area);
+
+let numero1 = 10;
+let numero2 = 20;   
+console.log (numero1 > numero2); // false   
+console.log (numero1 < numero2); // true
+console.log (numero1 == numero2); // false
+console.log (numero1 != numero2); // true   
+
+let celsius = 25;
+let fahrenheit = (celsius * 9/5) + 32; 
+console.log(celsius + "°C é igual a " + fahrenheit + "°F");
