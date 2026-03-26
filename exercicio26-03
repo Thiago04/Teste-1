@@ -1,0 +1,26 @@
+let idade = 15;
+if (idade >= 16)    
+    console.log("Você pode votar.");
+else
+    console.log("Você não pode votar."); 
+
+
+let peso = 104;
+let altura = 1.84;
+let imc = peso / (altura * altura);
+if (imc < 18.5) {
+    console.log("Abaixo do peso"); 
+} else if (imc >= 18.5 && imc < 25) {
+    console.log("Peso normal");
+} else {
+    console.log("Acima do peso");
+}      
+
+let numero = 0;
+if (numero > 0) 
+    console.log("O número é positivo.");
+else if (numero < 0) 
+    console.log("O número é negativo.");    
+else
+    console.log("O número é zero.");
+
