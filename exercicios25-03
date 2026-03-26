@@ -13,3 +13,21 @@ console.log (numero1 != numero2); // true
 let celsius = 25;
 let fahrenheit = (celsius * 9/5) + 32; 
 console.log(celsius + "°C é igual a " + fahrenheit + "°F");
+
+let nota1 = 8;
+let nota2 = 6;
+let nota3 = 9;
+let media = (nota1 + nota2 + nota3) / 3; 
+console.log("A média é: " + media); 
+
+let real = 100;
+let cotacaoDolar = 5.25;
+let dolar = real / cotacaoDolar; 
+console.log(real + " reais é igual a " + dolar.toFixed(2) + " dólares");
+
+let precoProduto = 50;
+let percentualDesconto = 20;
+let valorDesconto = (precoProduto * percentualDesconto) / 100; 
+let precoFinal = precoProduto - valorDesconto; 
+console.log("O preço final do produto é: " + precoFinal);
+
