@@ -26,16 +26,60 @@ else
     console.log("O número é zero.");
 
 let opcao = 3;
+let sabor = 2;
+
 switch (opcao) {
     case 1:
-        console.log("Você escolheu agua");
+        console.log("Você escolheu água");
+        switch (sabor) {
+            case 1:
+                console.log("Sabor: com gás");
+                break;
+            case 2:
+                console.log("Sabor: sem gás");
+                break;
+            default:
+                console.log("Sabor inválido");
+                break;
+        }
         break;
+
     case 2:
         console.log("Você escolheu suco");
+        switch (sabor) {
+            case 1:
+                console.log("Sabor: laranja");
+                break;
+            case 2:
+                console.log("Sabor: uva");
+                break;
+            case 3:
+                console.log("Sabor: maracujá");
+                break;
+            default:
+                console.log("Sabor inválido");
+                break;
+        }
         break;
+
     case 3:
         console.log("Você escolheu refrigerante");
+        switch (sabor) {
+            case 1:
+                console.log("Sabor: cola");
+                break;
+            case 2:
+                console.log("Sabor: guaraná");
+                break;
+            case 3:
+                console.log("Sabor: laranja");
+                break;
+            default:
+                console.log("Sabor inválido");
+                break;
+        }
         break;
+
     default:
         console.log("Opção inválida");
         break;
