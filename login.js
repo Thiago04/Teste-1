@@ -1,33 +1,34 @@
-let usuario = "Laura";
-let senha = "12";        
+let usuario = "Thiago";
+let senha = "12";
 
-let true;
+// Determina qual é o problema
+let status;
 
-switch (true) {
-    case (usuario === "Thiago" && senha === "12345"):
-        console.log("Login bem-sucedido!");
-        break;
-    case (usuario !== "Thiago"):
-        console.log("Usuário incorreto.");
-        break; 
-        case (senha !== "12345"):
-        console.log("Senha incorreta.");
-        break;
-        case (usuario !== "Thiago" && senha !== "12345"):
-        console.log("Login falhou.");
-        break;  
-    default:
-        console.log("Login falhou.");
-        break;
+if (usuario !== "Thiago" && senha !== "12345") {
+    status = "ambos_incorretos";
+} else if (usuario !== "Thiago") {
+    status = "usuario_incorreto";
+} else if (senha !== "12345") {
+    status = "senha_incorreta";
+} else {
+    status = "sucesso";
 }
 
-/*if (usuario === "Thiago" && senha === "12345") {
-    console.log("Login bem-sucedido!");
-} else if (usuario !== "thiago") {
-    console.log("Usuário incorreto.");
-} else if (senha !== "12345") {
-    console.log("Senha incorreta.");
-}   else {
-    console.log("Login falhou.");       
-}*/
-
+// Switch age sobre um valor fixo e claro
+switch (status) {
+    case "sucesso":
+        console.log("Login bem-sucedido!");
+        break;
+    case "usuario_incorreto":
+        console.log("Usuário incorreto.");
+        break;
+    case "senha_incorreta":
+        console.log("Senha incorreta.");
+        break;
+    case "ambos_incorretos":
+        console.log("Usuário e senha incorretos.");
+        break;
+    default:
+        console.log("Erro desconhecido.");
+        break;
+}
