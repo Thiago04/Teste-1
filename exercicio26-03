@@ -25,8 +25,8 @@ else if (numero < 0)
 else
     console.log("O número é zero.");
 
-let opcao = 3;
-let sabor = 2;
+let opcao = 1;
+let sabor = 1;
 
 switch (opcao) {
     case 1:
