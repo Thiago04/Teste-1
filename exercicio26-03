@@ -8,6 +8,7 @@ else
 let peso = 104;
 let altura = 1.84;
 let imc = peso / (altura * altura);
+console.log("O IMC é: " + imc.toFixed(2));
 if (imc < 18.5) {
     console.log("Abaixo do peso"); 
 } else if (imc >= 18.5 && imc < 25) {
