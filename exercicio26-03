@@ -24,3 +24,18 @@ else if (numero < 0)
 else
     console.log("O número é zero.");
 
+let opcao = 3;
+switch (opcao) {
+    case 1:
+        console.log("Você escolheu agua");
+        break;
+    case 2:
+        console.log("Você escolheu suco");
+        break;
+    case 3:
+        console.log("Você escolheu refrigerante");
+        break;
+    default:
+        console.log("Opção inválida");
+        break;
+}
