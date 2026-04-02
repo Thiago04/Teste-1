@@ -1,10 +1,10 @@
-for (let i = 10; i > 0; i--) {
+for (let i = 10; i >= 0; i--) {
     console.log("Contagem: " + i);
 }
 
 let i = 10;
-while (i > 10) {   
-    console.log("Contagem: " - i);
+while (i >= 0) {   
+    console.log("Contagem: "  + i);
     i--;
 }
 
@@ -22,7 +22,7 @@ let i = 10;
 do {
     console.log("Contagem: " + i);
     i--;
-}while (i > 0);
+}while (i >= 0);
 
 let i = 5;
 do {
