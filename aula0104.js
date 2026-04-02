@@ -2,21 +2,21 @@ for (let i = 10; i >= 0; i--) {
     console.log("Contagem: " + i);
 }
 
-let i = 10;
-while (i >= 0) {   
-    console.log("Contagem: "  + i);
-    i--;
+let i1 = 10;
+while (i1 >= 0) {   
+    console.log("Contagem: "  + i1);
+    i1--;
 }
 
-for (let i = 1; i <= 10; i++) {
-    console.log("5 * " + i + " = " + (5 * i));
+for (let i2 = 1; i2 <= 10; i2++) {
+    console.log("5 * " + i2 + " = " + (5 * i2));
 }
  
 let num = 2;
-let i = 1;
-while (i <= 10) {
-    console.log("num * " + i + " = " + (num * i));
-    i++;
+let i3 = 1;
+while (i3 <= 10) {
+    console.log("num * " + i3 + " = " + (num * i3));
+    i3++;
 }
 
 let i = 5;
