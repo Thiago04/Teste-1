@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Exemplo</title>
+    <script>
+      // JavaScript aqui
+let numero1 = document.getElementById("Numero1").value;
+let numero2 = document.getElementById("Numero2").value; 
+function processar() {
+  let numero1 = parseFloat(document.getElementById("Numero1").value);  
+  let numero2 = parseFloat(document.getElementById("Numero2").value);
+  let resultado = numero1 + numero2;
+  document.getElementById("resultado").innerHTML =  "O resultado é: " + resultado;
+}     
+
+    </script>
+  </head>
+  <body>
+    <div id="resultado">O resultado aparecerá aqui</div><br>
+   <input id="Numero1" type="text">
+   <input id="Numero2" type="text">
+   <button id="Mais" onclick="processar()">+</button>
+  </body>
+</html>
