@@ -1,23 +1,63 @@
 <html>
-  <head>
+
+<head>
     <title>Exemplo</title>
     <script>
-      // JavaScript aqui
-let numero1 = document.getElementById("Numero1").value;
-let numero2 = document.getElementById("Numero2").value; 
-function processar() {
-  let numero1 = parseFloat(document.getElementById("Numero1").value);  
-  let numero2 = parseFloat(document.getElementById("Numero2").value);
-  let resultado = numero1 + numero2;
-  document.getElementById("resultado").innerHTML =  "O resultado é: " + resultado;
-}     
+        // JavaScript aqui
+        function somar() {
+            let numero1 = parseFloat(document.getElementById("Numero1").value);
+            let numero2 = parseFloat(document.getElementById("Numero2").value);
+            if (isNaN(numero1) || isNaN(numero2)) {
+                document.getElementById("somar").innerHTML = "Por favor, insira números válidos.";
+            } else {
+                let resultado = numero1 + numero2;
+                document.getElementById("somar").innerHTML = "O resultado da soma é: " + resultado;
+            }
+        }
+        function subtrair() {
+            let numero1 = parseFloat(document.getElementById("Numero1").value);
+            let numero2 = parseFloat(document.getElementById("Numero2").value);
+            if (isNaN(numero1) || isNaN(numero2)) {
+                document.getElementById("somar").innerHTML = "Por favor, insira números válidos.";
+            } else {
+                let resultado = numero1 - numero2;
+                document.getElementById("somar").innerHTML = "O resultado da subtração é: " + resultado;
+            }
+        }
+        function Divisao() {
+            let numero1 = parseFloat(document.getElementById("Numero1").value);
+            let numero2 = parseFloat(document.getElementById("Numero2").value);
+            if (isNaN(numero1) || isNaN(numero2)) {
+                document.getElementById("somar").innerHTML = "Por favor, insira números válidos.";
+            } else if (numero2 === 0) {
+                document.getElementById("somar").innerHTML = "Por favor, insira um número diferente de zero para a divisão.";
+            } else {
+                let resultado = numero1 / numero2;
+                document.getElementById("somar").innerHTML = "O resultado da divisão é: " + resultado;
+            }
+        }
+        function Multiplicacao() {
+            let numero1 = parseFloat(document.getElementById("Numero1").value);
+            let numero2 = parseFloat(document.getElementById("Numero2").value);
+            if (isNaN(numero1) || isNaN(numero2)) {
+                document.getElementById("somar").innerHTML = "Por favor, insira números válidos.";
+            } else {
+                let resultado = numero1 * numero2;
+                document.getElementById("somar").innerHTML = "O resultado da multiplicação é: " + resultado;
+            }
+        }
 
     </script>
-  </head>
-  <body>
-    <div id="resultado">O resultado aparecerá aqui</div><br>
-   <input id="Numero1" type="text">
-   <input id="Numero2" type="text">
-   <button id="Mais" onclick="processar()">+</button>
-  </body>
+</head>
+
+<body>
+    <div id="somar">O resultado aparecerá aqui</div><br>
+    <input id="Numero1" type="text" placeholder="Digite">
+    <input id="Numero2" type="text" placeholder="Digite">
+    <button id="Mais" onclick="somar()">Clique para Somar</button>
+    <button id="Menos" onclick="subtrair()">Clique para Subtrair</button>
+    <button id="Divisao" onclick="Divisao()">Clique para Dividir</button>
+    <button id="Multiplicacao" onclick="Multiplicacao()">Clique para Multiplicar</button>
+</body>
+
 </html>
