@@ -5,13 +5,20 @@
     <script>
         // JavaScript aqui
 
-        function processar() {
+        function Adicionar() {
             const itemTexto = document.getElementById("Lista").value;
             if (itemTexto.trim() !== "") {
                 const novaListaItem = document.createElement("li");
                 novaListaItem.textContent = itemTexto;
                 document.getElementById("resultado").appendChild(novaListaItem);
                 document.getElementById("Lista").value = "";
+
+                const BotaoRemover = document.createElement("button");
+                BotaoRemover.textContent = "Remover";   
+                BotaoRemover.onclick = function() {
+                    novaListaItem.remove();
+                };
+                novaListaItem.appendChild(BotaoRemover);
             } else {
                 alert("Por favor, insira um item válido.");
             }
@@ -22,9 +29,9 @@
 <body>
     <!-- HTML aqui -->
     <h1>Minha Lista</h1>
-    <input id="Lista" type="text" placeholder="Informe o item da lista">
-    <button id="meuBotao" onclick="processar()">Salvar</button><br>
-    <ul id="resultado">Lista: </ul>
+    <input id="Lista" type="text" placeholder="Nova Tarefa">
+    <button onclick="Adicionar()">Adicionar</button>
+    <ul id="resultado">Lista Tarefas: </ul>
 </body>
 
 </html>
