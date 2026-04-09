@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Minha Lista</title>
+    <script>
+        // JavaScript aqui
+
+        function processar() {
+            const itemTexto = document.getElementById("Lista").value;
+            if (itemTexto.trim() !== "") {
+                const novaListaItem = document.createElement("li");
+                novaListaItem.textContent = itemTexto;
+                document.getElementById("resultado").appendChild(novaListaItem);
+                document.getElementById("Lista").value = "";
+            } else {
+                alert("Por favor, insira um item válido.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- HTML aqui -->
+    <input id="Lista" type="text">
+    <button id="meuBotao" onclick="processar()">Salvar</button><br>
+    <ul id="resultado">Lista </ul>
+</body>
+
+</html>
