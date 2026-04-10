@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validação de Formulário</title>
+</head>
+
+<body>
+    <!-- Implementar formulario -->
+     <form id="meuFormulario">
+        <h1>Validação de Formulário</h1>
+        <input id="Nome" type="text" placeholder="Digite seu nome">
+        <input id="Email" type="email" placeholder="Digite seu email">
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+     </form>
+    <div id="erro"></div>
+
+    <script>
+        <!-- Implementar back-end -->
+        function validarFormulario() {
+            const nome = document.getElementById("Nome").value;
+            const email = document.getElementById("Email").value;
+            const erro = document.getElementById("erro");
+            erro.innerHTML = "";
+
+            if (nome.trim() === "" || email.trim() === "") {
+                erro.innerHTML = "Todos os campos são obrigatórios!";
+                return;
+            }
+            if (!email.includes("@")) {
+                erro.innerHTML = "Email invalido";
+                return;
+            }
+
+            alert("Formulário enviado com sucesso!");
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
