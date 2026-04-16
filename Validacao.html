@@ -31,11 +31,13 @@
             if (!EMAIL.includes("@")) {
                 alert("Email invalido");
                 return;
-            }
-            if (SENHA.length < 8) { alert("A senha deve conter pelo menos 8 caracteres!"); return; } 
-            alert("Formulário enviado com sucesso!"); } 
-            
-            </script>
+                if (!EMAIL.includes(" ")) {
+                    alert("Email invalido");
+                    return;
+                }
+                if (SENHA.length < 8) { alert("A senha deve conter pelo menos 8 caracteres!"); return; }
+                alert("Formulárioenviado com sucesso!");
+            } </script>
 
 </body>
 
