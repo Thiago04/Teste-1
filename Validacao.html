@@ -19,20 +19,20 @@
     <script>
         <!-- Implementar back-end -->
         function validarFormulario() {
-            const email = document.getElementById("Email").value;
-            const senha = document.getElementById("Senha").value;
-            const erro = document.getElementById("erro");
+            const EMAIL = document.getElementById("Email").value;
+            const SENHA = document.getElementById("Senha").value;
+            const ERRO = document.getElementById("erro");
             erro.innerHTML = "";
 
-            if (email.trim() === "" || senha.trim() === "") {
+            if (EMAIL.trim() === "" || SENHA.trim() === "") {
                 alert("Todos os campos são obrigatórios!");
                 return;
             }
-            if (!email.includes("@")) {
+            if (!EMAIL.includes("@")) {
                 alert("Email invalido");
                 return;
             }
-            if (senha.length < 8) { alert("A senha deve conter pelo menos 8 caracteres!"); return; } 
+            if (SENHA.length < 8) { alert("A senha deve conter pelo menos 8 caracteres!"); return; } 
             alert("Formulário enviado com sucesso!"); } 
             
             </script>
