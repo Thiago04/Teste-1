@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nota</title>
+</head>
+
+<body>
+    <h1>Calculadora de Nota</h1>
+    <input type="text" id="nota" placeholder="Ingrese su nota">
+    <button onclick="calcularNota()">Calcular</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcularNota() {
+            var nota = parseFloat(document.getElementById("nota").value);
+            if (nota > 7 && nota <= 10 ) {
+                document.getElementById("resultado").innerHTML = "Aprovado";
+            }
+            else if(nota >= 5 && nota <= 7) {
+                document.getElementById("resultado").innerHTML = "Recuperação";
+            }
+            else if(nota < 5) {
+                document.getElementById("resultado").innerHTML = "Reprovado";
+            }
+        else {
+                document.getElementById("resultado").innerHTML = "Nota não válida";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
